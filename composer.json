@@ -1,7 +1,11 @@
 {
+    "name": "fyzzy1943/design-pattern-learn-php",
+    "type": "project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "DesignPatterns\\": "DesignPatterns/"
+            "DesignPatterns\\": "DesignPatterns/",
+            "Test\\": "test/"
         }
     }
 }

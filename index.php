@@ -8,6 +8,5 @@
 
 require 'vendor/autoload.php';
 
-use DesignPatterns\test\AbstractFactoryTest;
-
-(new AbstractFactoryTest())->test();
+(new \Test\AbstractFactoryTest())->test();
+(new \Test\BuilderTest())->test();

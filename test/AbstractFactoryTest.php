@@ -6,7 +6,7 @@
  * Time: 16:54
  */
 
-namespace DesignPatterns\test;
+namespace Test;
 
 use DesignPatterns\Creational\AbstractFactory\AbstractFactory;
 use DesignPatterns\Creational\AbstractFactory\HtmlFactory;
