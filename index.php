@@ -8,5 +8,17 @@
 
 require 'vendor/autoload.php';
 
+echo <<<EOF
+<style>
+  div{
+    color: #fff;
+    background-color: #666;
+  }
+</style>
+EOF;
+
+
+
 (new \Test\AbstractFactoryTest())->test();
 (new \Test\BuilderTest())->test();
+(new \Test\FactoryMethodTest())->test();
