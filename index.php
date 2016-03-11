@@ -17,7 +17,6 @@ echo <<<EOF
 </style>
 EOF;
 
-
 (new \Test\AbstractFactoryTest())->test();
 (new \Test\BuilderTest())->test();
 (new \Test\FactoryMethodTest())->test();
