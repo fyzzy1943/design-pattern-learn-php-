@@ -17,6 +17,8 @@ echo <<<EOF
 </style>
 EOF;
 
+// every time the compiler through, feel more comfortable than the climax.
+
 (new \Test\AbstractFactoryTest())->test();
 (new \Test\BuilderTest())->test();
 (new \Test\FactoryMethodTest())->test();
