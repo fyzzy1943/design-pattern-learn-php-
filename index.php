@@ -19,6 +19,8 @@ EOF;
 
 // every time the compiler through, feel more comfortable than the climax.
 
+echo '<pre>';
 (new \Test\AbstractFactoryTest())->test();
 (new \Test\BuilderTest())->test();
 (new \Test\FactoryMethodTest())->test();
+(new \Test\MultitonTest())->test();

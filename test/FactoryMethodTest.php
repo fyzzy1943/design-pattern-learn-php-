@@ -54,6 +54,6 @@ class FactoryMethodTest
 
         $shops = $this->getShop();
         $this->testCreation($shops['german']);
-        $this->testUnknownType($shops['italian']);
+//        $this->testUnknownType($shops['italian']);
     }
 }
