@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/7
- * Time: 16:17
- */
-
 namespace DesignPatterns\Creational\AbstractFactory;
 
 abstract class AbstractFactory

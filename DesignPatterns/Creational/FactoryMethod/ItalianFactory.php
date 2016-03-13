@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/11
- * Time: 9:53
- */
 
 namespace DesignPatterns\Creational\FactoryMethod;
-
 
 /**
  * 意大利造车厂

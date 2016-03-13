@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/12
- * Time: 16:10
- */
 
 namespace Test;
-
 
 use DesignPatterns\Creational\Multiton\Multiton;
 

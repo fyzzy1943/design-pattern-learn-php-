@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/10
- * Time: 15:16
- */
 
 namespace Test;
-
 
 use DesignPatterns\Creational\Builder\BikeBuilder;
 use DesignPatterns\Creational\Builder\BuilderInterface;

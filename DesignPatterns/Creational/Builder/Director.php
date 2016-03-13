@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/10
- * Time: 14:54
- */
 
 namespace DesignPatterns\Creational\Builder;
-
 
 /**
  * Director 是建造者模式的一部分，它知道建造者接口并通过建造者构建复杂对象。

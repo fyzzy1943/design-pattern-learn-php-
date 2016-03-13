@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/10
- * Time: 15:11
- */
 
 namespace DesignPatterns\Creational\Builder;
-
 
 /**
  * Class CarBuilder 建造汽车

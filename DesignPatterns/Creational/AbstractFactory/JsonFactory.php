@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2016/3/7
- * Time: 16:34
- */
 
 namespace DesignPatterns\Creational\AbstractFactory;
-
 
 class JsonFactory extends AbstractFactory
 {
