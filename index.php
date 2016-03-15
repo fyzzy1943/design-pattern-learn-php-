@@ -19,3 +19,7 @@ echo '<pre>';
 (new \Test\FactoryMethodTest())->test();
 (new \Test\MultitonTest())->test();
 (new \Test\PoolTest())->test();
+(new \Test\PrototypeTest())->test();
+(new \Test\SimpleFactoryTest())->test();
+(new \Test\SingletonTest())->test();
+(new \Test\StaticFactoryTest())->test();
