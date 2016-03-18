@@ -24,3 +24,4 @@ echo '<pre>';
 (new \Test\SingletonTest())->test();
 (new \Test\StaticFactoryTest())->test();
 (new \Test\AdapterTest())->test();
+(new \Test\BridgeTest())->test();
