@@ -25,3 +25,4 @@ echo '<pre>';
 (new \Test\StaticFactoryTest())->test();
 (new \Test\AdapterTest())->test();
 (new \Test\BridgeTest())->test();
+(new \Test\CompositeTest())->test();
