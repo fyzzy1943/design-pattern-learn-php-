@@ -8,11 +8,54 @@ namespace DesignPatterns\Structural\DataMapper;
 class UserMapper
 {
     /**
-     * @var DBAL
+     * @var Database
      */
     protected $adapter;
 
-    public function __construct(DBAL)
+    public function __construct(Database $database)
     {
+        $this->adapter = $database;
+    }
+
+    public function save(User $user)
+    {
+        $data = array(
+            'id' => $user->getUserId(),
+            'username' => $user->getUsername(),
+            'email' => $user->getEmail(),
+        );
+
+        // 如果没有则创建， 如果有则更新
+        if (null === ($id = $user->getUserId())) {
+            unset($data['id']);
+            $this->adapter->insert($data);
+
+            return true;
+        } else {
+            $this->adapter->update($data);
+
+            return true;
+        }
+    }
+
+    public function findById($id)
+    {
+        $result = $this->adapter->find($id);
+
+        if (null == $result) {
+            return null;
+        }
+
+        return $this->mapObject($result);
+    }
+
+    protected function mapObject(array $data)
+    {
+        $entry = new User();
+        $entry->setUserId($data['id']);
+        $entry->setUsername($data['username']);
+        $entry->setEmail($data['email']);
+
+        return $entry;
     }
 }
