@@ -27,3 +27,4 @@ echo '<pre>';
 (new \Test\BridgeTest())->test();
 (new \Test\CompositeTest())->test();
 (new \Test\DataMapperTest())->test();
+(new \Test\DecoratorTest())->test();
