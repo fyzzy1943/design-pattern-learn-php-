@@ -22,7 +22,7 @@ class Database
 
     public function insert(array $data)
     {
-        $this->$data[] = $data;
+        $this->data[] = $data;
     }
 
     public function update(array $data)

@@ -26,8 +26,8 @@ class UserMapper
         );
 
         // 如果没有则创建， 如果有则更新
-        if (null === ($id = $user->getUserId())) {
-            unset($data['id']);
+        if (null === ($this->adapter->find($user->getUserId()))) {
+//            unset($data['id']);
             $this->adapter->insert($data);
 
             return true;
@@ -38,7 +38,7 @@ class UserMapper
         }
     }
 
-    public function findById($id)
+    public function find($id)
     {
         $result = $this->adapter->find($id);
 
@@ -47,6 +47,18 @@ class UserMapper
         }
 
         return $this->mapObject($result);
+    }
+
+    public function all()
+    {
+        $resultSet = $this->adapter->all();
+        $entries = array();
+
+        foreach ($resultSet as $row) {
+            $entries[] = $this->mapObject($row);
+        }
+
+        return$resultSet;
     }
 
     protected function mapObject(array $data)
