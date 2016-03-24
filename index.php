@@ -28,3 +28,4 @@ echo '<pre>';
 (new \Test\CompositeTest())->test();
 (new \Test\DataMapperTest())->test();
 (new \Test\DecoratorTest())->test();
+(new \Test\DependencyInjectionTest())->test();
