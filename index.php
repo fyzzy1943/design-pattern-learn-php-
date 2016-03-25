@@ -29,3 +29,4 @@ echo '<pre>';
 (new \Test\DataMapperTest())->test();
 (new \Test\DecoratorTest())->test();
 (new \Test\DependencyInjectionTest())->test();
+(new \Test\FacadeTest())->test();
