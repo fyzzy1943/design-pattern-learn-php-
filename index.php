@@ -30,3 +30,4 @@ echo '<pre>';
 (new \Test\DecoratorTest())->test();
 (new \Test\DependencyInjectionTest())->test();
 (new \Test\FacadeTest())->test();
+(new \Test\FluentInterfaceTest())->test();
