@@ -31,3 +31,4 @@ echo '<pre>';
 (new \Test\DependencyInjectionTest())->test();
 (new \Test\FacadeTest())->test();
 (new \Test\FluentInterfaceTest())->test();
+(new \Test\ProxyTest())->test();
