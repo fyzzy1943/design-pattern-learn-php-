@@ -31,4 +31,9 @@ class BookList implements \Countable
             }
         }
     }
+
+    public function count()
+    {
+        return count($this->books);
+    }
 }
