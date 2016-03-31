@@ -32,5 +32,11 @@ class Caretaker
         $originator->setState('State3');
 
         $this->saveToHistory($originator->getStateAsMemento());
+
+        $originator->setState('State4');
+
+        $originator->restoreFromMemento($this->getFromHistory(1));
+
+        return $originator->getStateAsMemento()->getState();
     }
 }
